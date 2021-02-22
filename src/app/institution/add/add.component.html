@@ -1,0 +1,11 @@
+<h1>დაწესებულების შექმანა</h1>
+
+<form [formGroup]="addInstitution">
+    <label>name</label>
+    <input type="text" placeholder="Enter name" formControlName="name">
+    <label>number</label>
+    <input type="text" placeholder="Enter number" formControlName="number">
+    <label>pid</label>
+    <input type="text" placeholder="Enter pid" formControlName="pid">
+</form>
+<button mat-raised-button (click)="createInstitution()">დამატება</button>

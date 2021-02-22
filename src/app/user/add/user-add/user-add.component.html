@@ -1,0 +1,9 @@
+<h1>დაწესებულების შექმანა</h1>
+
+<form [formGroup]="addUser">
+    <label>Name</label>
+    <input type="text" placeholder="Enter name" formControlName="name">
+    <label>Email</label>
+    <input type="text" placeholder="Enter email" formControlName="email">
+</form>
+<button mat-raised-button (click)=" createUser()">დამატება</button>

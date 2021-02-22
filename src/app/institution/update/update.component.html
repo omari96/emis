@@ -1,0 +1,11 @@
+<h1>დაწესებულების რედაქტირება</h1>
+
+<form [formGroup]="editInstitution">
+    <label>name</label>
+    <input type="text" formControlName="name">
+    <label>number</label>
+    <input type="text" formControlName="number">
+    <label>pid</label>
+    <input type="text" formControlName="pid">
+</form>
+<button type="submit" mat-raised-button (click)="updateInstitution()" [routerLink]="['/institution-list']">Update</button>
