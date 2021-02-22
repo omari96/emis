@@ -1,10 +1,8 @@
 <h1>დაწესებულების რედაქტირება</h1>
-
 <form [formGroup]="editUser">
     <label>Name</label>
     <input type="text" formControlName="name">
     <label>Email</label>
     <input type="text" formControlName="email">
 </form>
-
 <button type="submit" mat-raised-button (click)="updateUser()">Update</button> 
